@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Palermo</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section class="hero">
+        <h1>Weather Forecast</h1>
+        <h2>Comuni di Palermo</h2>
+    </section>
+    <section class="search">
+        <form name="form">
+            <input
+                    id = "city"
+                    name="city"
+                    class="search-input"
+                    type="hidden"
+                    placeholder="Search a City..."
+                    required
+                />
+            <div class="section-select">
+                <select name="select" class="sel" id="sel" onchange="myFunction(this.value)" >
+                    <option class="option" value="">-- Scegli la città --</option>
+                </select>
+                <button id="button" class="search-button">🔎</button>
+                <div class="wrapper"></div>
+                
+        </form>
+            </div>
+    </section>
+    
+    <div class="section">
+        <div class="container">
+            <div class="city">
+                <h3 class="city-name"></h3>
+                
+                <div><img class="icon" src="" alt=""></div> 
+                <h5 class="weather"></h5>
+            </div>
+            <div class="temperature__section-media">
+                <p class="temperature-med"></p>
+                <p class="temperature-med">°C</p>
+            </div>
+            <div class="temperature">
+                
+                <div class="temperature__section">
+                    <p>Min &nbsp</p>
+                    <p class="temperature-min"></p>
+                    <p>°C</p>
+                </div>
+                <div class="temperature__section">
+                    <p>Max &nbsp</p>
+                    <p class="temperature-max"></p>
+                    <p>°C</p>
+                </div>
+                <div class="temperature__section">
+                    <p>Umidità &nbsp</p>
+                    <p class="temperature-umid"></p>
+                    <p>%</p>
+                </div>
+                
+            </div>    
+      
+        </div>
+    </div> 
+
+    <form action="#">
+        <option class="form"></option>
+    </form>
+    <main>
+        <div class="cardList"></div>
+    </main> 
+    <div class="cart">
+        <p>Clicca sul Mondo per il meteo di ogni città</p>
+        <a href="./index2.html" target="_self">
+            <img class="world" src="./images/mondo.svg" alt="world">
+        </a> 
+    </div>
+    
+    <footer>
+        <p>Weather forecast by 
+            <a href="https://openweathermap.org/" target=”_blank”>openweathermap</a>
+        </p>
+        <p>© Made by
+            <a href="https://www.linkedin.com/in/antonella-schillaci-872212252/" target=”_blank”>Antonella Schillaci</a>
+        </p>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    
+</body>
+</html>
+
